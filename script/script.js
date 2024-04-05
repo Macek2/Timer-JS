@@ -27,8 +27,7 @@ function updateCountdown(targetID, interval) {
                 remainingTime=60;
         }
 
-        let countdownText = ("0" + Math.floor(remainingTime / 60)).slice(-2) + ":" + ("0" + (remainingTime % 60)).slice(-2) + ":" + ("0" + remainingSeconds).slice(-2);
-        document.getElementById(targetID).textContent = countdownText;
+        document.getElementById(targetID).textContent = ("0" + Math.floor(remainingTime / 60)).slice(-2) + ":" + ("0" + (remainingTime % 60)).slice(-2) + ":" + ("0" + remainingSeconds).slice(-2);
 
         document.getElementById("current-time").textContent = "Aktualna godzina: " + ("0" + currentHour).slice(-2) + ":" + ("0" + currentMinutes).slice(-2) + ":" + ("0" + currentSeconds).slice(-2);
         document.getElementById("expected-time" + targetID.charAt(targetID.length - 1)).textContent = ("0" + endHour).slice(-2) + ":" + ("0" + endMinutes).slice(-2);
@@ -41,8 +40,7 @@ function updateCountdown(targetID, interval) {
                 document.getElementById("color" + targetID.charAt(targetID.length - 1)).style.backgroundColor = "";
         }
 }
-
-const interval= setInterval(function() {
+setInterval(function() {
         updateCountdown("remaining-time1", 10);
         updateCountdown("remaining-time2", 15);
         updateCountdown("remaining-time3", 30);
@@ -51,11 +49,4 @@ const interval= setInterval(function() {
         updateCountdown("remaining-time6", 60);
         updateCountdown("remaining-time7", 80);
         updateCountdown("remaining-time8", 90);
-        updateCountdown("remaining-time9", 300);
-        updateCountdown("remaining-time10", 520);
-        updateCountdown("remaining-time11", 270);
-        updateCountdown("remaining-time12", 320);
-        updateCountdown("remaining-time13", 420);
-        updateCountdown("remaining-time14", 270);
-        updateCountdown("remaining-time15", 300);
 }, 1000);
