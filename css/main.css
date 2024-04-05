@@ -1,0 +1,81 @@
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: #1e1e1e; /* Kolor tła w trybie ciemnym */
+    color: #ffffff; /* Kolor tekstu w trybie ciemnym */
+    transition: background-color 0.5s ease, color 0.5s ease;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#head{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 180%;
+    margin-top: 5%;
+    font-weight: 600;
+}
+
+#greetings{
+    margin-left: 20%;
+    margin-right: 50%;
+    border-spacing: 20px;
+    height: 50%;
+    width: 60%;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 180%;
+    margin-top: 5%;
+    font-weight: 600;
+}
+
+table{
+    margin-left: 20%;
+    margin-right: 50%;
+    border-spacing: 20px;
+    height: 50%;
+    width: 60%;
+    text-align: center;
+}
+
+table td{
+    border-radius: 20px 20px 20px 20px;
+    border: 6px solid white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 110%;
+    color: white;
+    font-weight: 600;
+    padding: 3%;
+}
+
+td span{
+    font-size: 130%;
+}
+
+span a{
+    color: white;
+}
+
+td div{
+    margin: 10px;
+}
+
+footer {
+    margin-top: 5%;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 130%;
+}
