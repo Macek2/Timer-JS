@@ -76,6 +76,12 @@ td div{
     margin: 10px;
 }
 
+audio{
+    margin-left: 25%;
+    width: 50%;
+
+}
+
 footer {
     margin-top: 5%;
     width: 100%;
