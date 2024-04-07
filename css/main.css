@@ -28,8 +28,8 @@ body {
 }
 
 #head img{
-    height: 500px;
-    width: 500px;
+    height: 50%;
+    width: 52%;
 }
 
 #greetings{
@@ -41,7 +41,7 @@ body {
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 180%;
-    margin-top: 5%;
+    margin-top: 3%;
     font-weight: 600;
 }
 
