@@ -30,6 +30,8 @@ body {
 #head img{
     height: 50%;
     width: 52%;
+    border: solid 4px white;
+    border-radius: 5%;
 }
 
 #greetings{
